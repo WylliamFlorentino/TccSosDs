@@ -2,8 +2,10 @@
 <?php 
 if( isset($_GET["pesquisa"]) )
 {
+    
     $pesquisa = "";
     $pesquisa = $_GET["pesquisa"];
+
     if( empty($pesquisa) )
     {
        //Se a variavel estiver vazia executa aqui 
@@ -12,7 +14,7 @@ if( isset($_GET["pesquisa"]) )
        $resultado = $conexao->query($sql);
        
        $conexao->close();
-       
+
     }
     else
     {

@@ -10,6 +10,7 @@
         die("Falha na conexão:".$conexao->connect_error);
         echo"";
     }
+    
 
     $script="
     
@@ -23,7 +24,7 @@
 
 
     INSERT INTO PROFESSOR (NOME, TELEFONE) VALUES ( 'Wylliam', '(14)99880-8378)');
-    
+
 
     INSERT INTO PRODUTOS (DESCRICAO, CODIGO_BARRAS, VALOR, ATIVO) VALUES ( 'Goiabinha Saborosa', '7898045700725', 1.50, 1);
     INSERT INTO produtos (DESCRICAO, VALOR, CODIGO_BARRAS, ATIVO) VALUES
