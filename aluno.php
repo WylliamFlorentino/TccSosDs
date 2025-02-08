@@ -12,6 +12,7 @@ if( isset($_GET["pesquisa"]) )
        $resultado = $conexao->query($sql);
        
        $conexao->close();
+       
     }
     else
     {
