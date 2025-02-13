@@ -1,5 +1,7 @@
 <?php include "cabecario.php"?>
 <?php 
+
+//interação
 if( isset($_GET["pesquisa"]) )
 {
     
