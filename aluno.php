@@ -18,7 +18,7 @@ if( isset($_GET["pesquisa"]) )
 {
     //Pesquisar o Professor ligado com o Aluno 
     $pesquisa = "";
-    
+
 }
 
 ?>
@@ -65,6 +65,7 @@ if( isset($_GET["pesquisa"]) )
                                 <th scope="col">Contato</th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                             <?php 
  //                               if ($resultado->num_rows > 0) {

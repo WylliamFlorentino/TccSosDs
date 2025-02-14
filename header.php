@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS DS</title>
     <link href="bootstrap.min.css" rel="stylesheet"/>
+    
 </head>
 <body style="background: linear-gradient(80deg, #333333 0%, #4d4d4d 50%, #d3d3d3 100%)">
 
