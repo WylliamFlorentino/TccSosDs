@@ -7,8 +7,10 @@
     <title>SOS DS</title>
     <link href="bootstrap.min.css" rel="stylesheet"/>
 </head>
-<body style="background: linear-gradient(90deg,black,red)">
-<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="background: linear-gradient(90deg,black,red)">
+<body style="background: linear-gradient(80deg, #333333 0%, #4d4d4d 50%, #d3d3d3 100%)">
+
+<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary border border-5" data-bs-theme="dark" style="background: linear-gradient(90deg,black,red)">
+  
   <div class="container-fluid">
     <a class="navbar-brand" href="#">SOS DS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+          <a class="nav-link active" aria-current="page" href="aluno.php">Início</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="variavel.php">Variável</a>

@@ -1,4 +1,4 @@
-<?php include "cabecario.php"?>
+<?php include "header.php"?>
 <?php 
 
 //interação
@@ -8,8 +8,8 @@ if( isset($_GET["pesquisa"]) )
     $pesquisa = "";
     $pesquisa = $_GET["pesquisa"];
 
-      include "conexao.php";
-      $sql = "Select ID, Nome from Professor order by Id desc";
+      include "Banco.php";
+      $sql = "Select ID, Nome,telefone from Professor order by Id desc";
       $resultado = $conexao->query($sql);
       
       $conexao->close();
@@ -17,8 +17,8 @@ if( isset($_GET["pesquisa"]) )
 }else
 {
     //Pesquisar o Professor ligado com o Aluno 
-
     $pesquisa = "";
+    
 }
 
 ?>
