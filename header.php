@@ -9,7 +9,6 @@
     
 </head>
 <body style="background: linear-gradient(80deg, #333333 0%, #4d4d4d 50%, #d3d3d3 100%)">
-
 <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary border border-5" data-bs-theme="dark" style="background: linear-gradient(90deg,black,red)">
   
   <div class="container-fluid">
