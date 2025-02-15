@@ -1,3 +1,4 @@
+/* Reset e Configurações Gerais */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,30 +11,40 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('imagens/image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #791010, #000000);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s infinite alternate ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 .login-container {
     width: 100%;
     max-width: 400px;
-    padding: 20px;
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.356);
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
     color: white;
+    font-size: 24px;
 }
 
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 label {
@@ -44,32 +55,41 @@ label {
 
 input[type="text"],
 input[type="password"] {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 button {
-    padding: 10px;
-    background-color: red;
+    padding: 12px;
+    background-color: #ff4b2b;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #9c0000;
+    background-color: #d9381e;
+    transform: scale(1.05);
 }
 
 /* Estilo Responsivo */
 @media (max-width: 600px) {
     .login-container {
-        padding: 15px;
+        padding: 20px;
     }
 
     input[type="text"],
@@ -78,6 +98,6 @@ button:hover {
     }
 
     button {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
