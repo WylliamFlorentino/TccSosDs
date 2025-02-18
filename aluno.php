@@ -68,20 +68,22 @@ if( isset($_GET["pesquisa"]) )
                         
                         <tbody>
                             <?php 
- //                               if ($resultado->num_rows > 0) {
-   //                                 while($row = $resultado->fetch_assoc()) {
-     //                                   echo "<tr>";
-       //                                 echo "<td>" . $row["Nome"] . "</td>";
-         //                               echo "<td>" . $row["Disciplina"] . "</td>";
-           //                             echo "<td>" . $row["Atividades"] . "</td>";
-             //                           echo "<td>" . $row["Contato"] . "</td>";                                     
-                   //                     echo "<td><a href='editar_produto.php?Id=$row[Id]' class='btn btn-warning' >Editar</a>  ";
-                     //                   echo "<a href='excluir_produto.php?Id=$row[Id]' class='btn btn-danger'>Excluir</a></td>";
-                       //                 echo "</tr>";
-                  //                  }
-                    //            } else {
-                      //              echo "<tr><td colspan='3'>Nenhum registro encontrado</td></tr>";
-                        //        }
+                   if ($resultado->num_rows > 0) 
+                    {while($row = $resultado->fetch_assoc()) {
+                                echo "<tr>";
+                                echo "<td>" . $row["Nome"] . "</td>";
+                                echo "<td>" . $row["Disciplina"] . "</td>";
+                                echo "<td>" . $row["Atividades"] . "</td>";
+                                echo "<td>" . $row["Contato"] . "</td>";                                     
+                                echo "<td><a href='editar_produto.php?Id=$row[Id]' class='btn btn-warning' >Editar</a>  ";
+                                echo "<a href='excluir_produto.php?Id=$row[Id]' class='btn btn-danger'>Excluir</a></td>";
+                                echo "</tr>";
+                                }
+                                            
+                    } 
+                    else {
+                        echo "<tr><td colspan='3'>Nenhum registro encontrado</td></tr>";
+                        }
                             ?>
                                                     
                         </tbody>
